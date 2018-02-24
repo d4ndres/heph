@@ -6,7 +6,7 @@
   font-family: 'Adamina', serif;
 }
 body{
-  width: 100vw;
+  /* width: 100vw; */
 
 }
 .center1000{
@@ -37,7 +37,7 @@ header *{
 } */
 .principalContainer{
   background-image:  url('../image/background3.jpg') ;
-  width: 100vw;
+  /* width: 100vw; */
   padding-bottom: 30px;
 }
 .header{
@@ -51,9 +51,12 @@ header *{
 }
 .mainMenuOption{
   font-size: 20px;
+  position: relative;
+  left: 400px;
 }
 .mainMenuOption li{
   margin-left: 30px;
+  color: white;
 }
 .portada{
   color: white;
@@ -61,6 +64,7 @@ header *{
 }
 .portada button{
   margin: 23;
+  border-radius: 10px;
 }
 .headphones *{
   /* border: red dashed 2px; */
@@ -70,7 +74,8 @@ header *{
   display: block;
   padding: 20px 10px 7px 10px;
   border: #0f0607 solid 2px;
-  overflow: hidden;
+  position: relative;
+  border-radius: 10px 0 10px 0;
 }
 .containerQualities{
   display: inline-block;
@@ -86,8 +91,14 @@ header *{
   padding: 10px;
 }
 .izquierda{
-  float: left;
+  /* float: left; */
+  position: absolute;
+  left: 200px;
+  bottom: 4px;
 }
 .derecha{
-  float: right;
+  /* float: right; */
+  position: absolute;
+  right: 240px;
+  bottom: 3px;;
 }
