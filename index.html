@@ -3,60 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>Heph - TheBestSound</title>
-    <style media="screen">
-      body{
-        background-color: salmon;
-      }
-    </style>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/styleHeph.css">
+    <link href="https://fonts.googleapis.com/css?family=Adamina" rel="stylesheet">
+
   </head>
   <body>
-    <header id="header">
-      <figure>
-        <a href="index.html">
-          <img  src="./image/iconHeph.png" alt="icon-heph" width="46">
+    <div class="principalContainer">
+      <header id="header" class="header center1000">
+        <a class="containetIco" href="index.html"  >
+          <img  src="./image/ultimateIcoHeph.png" alt="icon-heph" width="200">
         </a>
-      </figure>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="precios.html">precios</a>
-          </li>
-          <li>
-            <a href="#headphones">headphones</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section id="portada">
-      <h1>Heph - The Best HeadPhones</h1>
-      <h3>Unete al undo del mejor sonido</h3>
-      <button type="button" name="button">conoce más</button>
-    </section>
-    <section id="headphones">
-      <article class="">
-        <h2>Nuetros audifonos</h2>
+        <nav class=" mainMenuOption ">
+          <ul class="">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="precios.html">Precios</a>
+            </li>
+            <li>
+              <a href="#headphones">Headphones</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section  id="portada" class="portada center1000">
+        <h1 class="title" >The Best HeadPhones</h1>
+        <h3 class="titleB" >Unete al undo del mejor sonido</h3>
+        <button type="button" name="button">conoce más</button>
+      </section>
+
+    </div>
+    <section id="headphones" class="headphones center1000">
+      <h2 class="titleB secondTitle">Nuetros auriculares</h2>
+      <article class="boxContent">
         <!-- headphones big -->
-        <img height="250" src="./image/bigClassic.png" alt="big-classic-and others"/>
-        <h4>Biggers</h4>
-        <ol>
-          <li>Estilo DJ</li>
-          <li>Solo en el sonido</li>
-          <li>originales</li>
-        </ol>
+        <img class="derecha" height="230" src="./image/bigClassic.png" alt="big-classic-and others"/>
+        <div class="containerQualities biggers">
+          <h3 class="titleC">Biggers</h3>
+          <ol class="ordenList ">
+            <li>Estilo DJ</li>
+            <li>originales</li>
+            <li>Alta fercuencia</li>
+            <li>Solo en el sonido</li>
+            <li>Una gran decisión</li>
+          </ol>
+        </div>
       </article>
-      <article class="">
-        <h2>Nuetros audifonos</h2>
+      <article class="boxContent">
         <!-- headphones big -->
-        <img height="250" src="./image/classic.png" alt="simples"/>
-        <h4>littles</h4>
-        <ol>
-          <li>Estilo suave</li>
-          <li>Discretos</li>
-          <li>Escucha tu mejor playlist</li>
-        </ol>
+        <img class="izquierda" height="230" src="./image/classic.png" alt="simples"/>
+        <div class="containerQualities littles">
+          <h3 class="titleC">littles</h3>
+          <ol class="ordenList ">
+            <li>Estilo heph</li>
+            <li>Discretos</li>
+            <li>Alta sensibilidad</li>
+            <li>Ya todos los tienen</li>
+            <li>Escucha tu mejor playlist</li>
+          </ol>
+        </div>
       </article>
     </section>
   </body>

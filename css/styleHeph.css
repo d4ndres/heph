@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* background-color: mediumslateblue; */
+  /* font-family: 'Nanum Brush Script', cursive; */
+  font-family: 'Adamina', serif;
+}
+body{
+  width: 100vw;
+
+}
+.center1000{
+  width: 1000px;
+  margin: auto;
+}
+.title{
+  font-size: 70px;
+  /* margin: 70px 0 40px 0; */
+  padding-left: 20;
+}
+.titleB{
+  font-size: 34px;
+  padding-left: 30px;
+  color: black;
+}
+.titleC{
+  font-size: 46px;
+}
+.secondTitle{
+  padding: 20px 0;
+}
+/* header{
+  border: mediumslateblue solid 0.1px;
+}
+header *{
+  border: mediumslateblue solid 0.1px;
+} */
+.principalContainer{
+  background-image:  url('../image/background3.jpg') ;
+  width: 100vw;
+  padding-bottom: 30px;
+}
+.header{
+  margin-bottom: 30px;
+}
+.header a, .mainMenuOption li, .mainMenuOption {
+  display: inline-block;
+}
+.containetIco{
+  margin: 30px 20px;
+}
+.mainMenuOption{
+  font-size: 20px;
+}
+.mainMenuOption li{
+  margin-left: 30px;
+}
+.portada{
+  color: white;
+  padding: 45px 30px 35px 30px;
+}
+.portada button{
+  margin: 23;
+}
+.headphones *{
+  /* border: red dashed 2px; */
+}
+.boxContent{
+  margin: 30px;
+  display: block;
+  padding: 20px 10px 7px 10px;
+  border: #0f0607 solid 2px;
+  overflow: hidden;
+}
+.containerQualities{
+  display: inline-block;
+}
+.biggers{
+  margin-left:  150px;
+}
+.littles{
+  margin-left: 450px;
+}
+.ordenList{
+  margin-left: 30px;
+  padding: 10px;
+}
+.izquierda{
+  float: left;
+}
+.derecha{
+  float: right;
+}
