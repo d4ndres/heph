@@ -13,6 +13,12 @@ body{
   width: 1000px;
   margin: auto;
 }
+.block{
+  display: block;
+}
+.inlineBlock{
+  display: inline-block;
+}
 .title{
   font-size: 70px;
   /* margin: 70px 0 40px 0; */
@@ -42,17 +48,20 @@ header *{
 }
 .header{
   margin-bottom: 30px;
+  position: relative;
 }
 .header a, .mainMenuOption li, .mainMenuOption {
   display: inline-block;
+  color: white;
 }
 .containetIco{
   margin: 30px 20px;
 }
 .mainMenuOption{
   font-size: 20px;
-  position: relative;
-  left: 400px;
+  position: absolute;
+  right: 5px;
+  top: 40px;
 }
 .mainMenuOption li{
   margin-left: 30px;
@@ -101,4 +110,47 @@ header *{
   position: absolute;
   right: 240px;
   bottom: 3px;;
+}
+
+.footer{
+  background-color: #6c6259;
+  color: white;
+}
+.footer, .design{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactos{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contactos a{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactos *{
+  color: white;
+  margin: 5px;
+}
+.form {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+.col1 , .col2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.intereses{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.intereses *{
+  margin: 0px 5px 1px 0;
 }
