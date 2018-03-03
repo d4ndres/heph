@@ -1,8 +1,5 @@
+/*********************************/
 *{
-  margin: 0;
-  padding: 0;
-  /* background-color: mediumslateblue; */
-  /* font-family: 'Nanum Brush Script', cursive; */
   font-family: 'Adamina', serif;
 }
 body{
@@ -19,6 +16,7 @@ body{
 .inlineBlock{
   display: inline-block;
 }
+
 .title{
   font-size: 70px;
   /* margin: 70px 0 40px 0; */
@@ -35,16 +33,18 @@ body{
 .secondTitle{
   padding: 20px 0;
 }
-/* header{
-  border: mediumslateblue solid 0.1px;
+input, textarea{
+  outline: 0;
 }
-header *{
-  border: mediumslateblue solid 0.1px;
-} */
+input:focus, textarea:focus{
+  background: lightgray;
+}
+/*********************************/
+/*********************************/
 .principalContainer{
   background-image:  url('../image/background3.jpg') ;
-  /* width: 100vw; */
-  padding-bottom: 30px;
+  background-size: cover;
+
 }
 .header{
   margin-bottom: 30px;
@@ -53,6 +53,7 @@ header *{
 .header a, .mainMenuOption li, .mainMenuOption {
   display: inline-block;
   color: white;
+  text-decoration: none;
 }
 .containetIco{
   margin: 30px 20px;
@@ -67,14 +68,30 @@ header *{
   margin-left: 30px;
   color: white;
 }
+.mainMenuOption li::before{
+  content: "⊙"
+}
 .portada{
   color: white;
-  padding: 45px 30px 35px 30px;
+  padding: 20px 30px 80px 30px;
+
 }
-.portada button{
-  margin: 23;
+.eslogan{
+  /* text-align: right; */
+  color: white;
+}
+.portada .button{
+
+  padding: 4px;
   border-radius: 10px;
+  font-size: 15px;
+  background: linear-gradient(to left, #9e2419, #bc6c09 );
+  text-decoration: none;
+  color: white;
+  position: relative;
+  top: 30px;
 }
+/*********************************/
 .headphones *{
   /* border: red dashed 2px; */
 }
@@ -109,12 +126,16 @@ header *{
   /* float: right; */
   position: absolute;
   right: 240px;
-  bottom: 3px;;
+  bottom: 3px;
 }
+/*********************************/
 
 .footer{
-  background-color: #6c6259;
+  background-color: #2f2420;
   color: white;
+}
+.footer a{
+  text-decoration: none;
 }
 .footer, .design{
   display: flex;
@@ -154,3 +175,33 @@ header *{
 .intereses *{
   margin: 0px 5px 1px 0;
 }
+/*********************************/
+/*PRECIOS  */
+.tabla{
+  margin: 70px 0;
+}
+table{
+  width: 100%;
+}
+table, table *{
+  border: black solid 1px;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  background-color: #a78541;
+  color: white;
+  padding: 20px;
+}
+td {
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+/*********************************/
