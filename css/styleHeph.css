@@ -1,11 +1,12 @@
 /*********************************/
 body{
+  width: 100%;
   margin: 0;
   font-family: 'Adamina', serif;
   background: lightblue;
 }
 .center1000{
-  width: 1000px;
+  width: 70%;
   margin: auto;
   position: relative;
 }
@@ -46,7 +47,6 @@ input:focus, textarea:focus{
 
 }
 .header{
-  margin-bottom: 5px;
   position: relative;
 }
 .header a, .mainMenuOption li, .mainMenuOption {
@@ -68,6 +68,7 @@ input:focus, textarea:focus{
   margin: 0;
 }
 .mainMenuOption li{
+  display: inline-block;
   margin-left: 30px;
   color: white;
 }
@@ -175,7 +176,7 @@ input:focus, textarea:focus{
   flex-direction: column;
   justify-content: space-around;
 }
-.contactoInput input{
+.contactoInput .cajas{
   width: 75%;
 }
 
@@ -209,16 +210,15 @@ td {
   padding: 20px;
 }
 
-
-/*********************************/
-/*********************************/
 /*********************************/
 /*********************************/
 /*********************************/
 
 @media screen and (max-width: 1024px){
-/*** IPAD ***/
-/* portada */
+
+  .center1000{
+    width: 95%
+  }
   .portada {
     height: auto;
   }
@@ -230,13 +230,13 @@ td {
     margin: 20px 0 0 0;
   }
   .eslogan {
-    font-size: 16px;
+    font-size: 20px;
     margin: 6px 2px;
   }
   .portada .button{
     margin-bottom: 20px;
   }
-  /*  headphones  */
+
 
   .headphones {
     text-align: center;
@@ -252,7 +252,82 @@ td {
   .containerQualities li{
     list-style: none;
   }
+}
 
-  /*  headphones  */
+@media screen and (max-width: 800px){
+  .header{
+    text-align: center;
+  }
+  .containetIco{
+    margin: 5px;
+  }
+  .mainMenuOption{
+    position: static;
+    display: block;
 
+  }
+  .mainMenuOption li, .mainMenuOption ul{
+    margin: 0 10px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px){
+  .footer, .design, .form{
+    display: block;
+  }
+  .form{
+    margin: auto;
+    width: 300px;
+  }
+  .intereses{
+    display: block;
+  }
+  .intereses label{
+    display: block;
+  }
+  .intereses label *{
+    margin: 2px 0;
+  }
+  .contactoInput .cajas{
+    width: 100%;
+    font-size: 15px;
+    padding: 3px;
+  }
+  .col2, textarea{
+    width: 100%;
+  }
+  .validador{
+    display: inline-block;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 520px){
+  .portada{
+    text-align: center;
+  }
+  .mainMenuOption li{
+    display: block;
+    padding: 6px 0;
+    border-bottom: 1px solid white;
+  }
+  .mainMenuOption li:first-child{
+    border-top: 1px solid white;
+  }
+  .mainMenuOption li::before{
+    display: none;
+  }
+  .eslogan{
+    padding: 0;
+  }
+  .headphones img{
+    height: 190px;
+    width: auto;
+  }
+  .titleC{
+    font-size: 30px;
+  }
+  .ordenList{
+    padding: 0;
+    margin: 15px;
+  }
 }
