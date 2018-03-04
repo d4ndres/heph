@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <title>Heph - TheBestSound</title>
     <!-- <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./css/styleHeph.css">
-    <link href="https://fonts.googleapis.com/css?family=Adamina" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Adamina" rel="stylesheet/">
+    <link rel="stylesheet" href="./css/styleHeph.css"/>
   </head>
   <body>
-    <div class="principalContainer">
+    <section id="portada" class="portada principalContainer">
       <header id="header" class="header center1000">
         <a class="containetIco" href="index.html"  >
           <img  src="./image/ultimateIcoHeph.png" alt="icon-heph" width="200">
@@ -25,45 +24,47 @@
           </ul>
         </nav>
       </header>
-      <section  id="portada" class="portada center1000">
-        <h1 class="title" >The Best HeadPhones</h1>
+      <div class="center1000">
+        <h1 class="title titleIndex" >The Best HeadPhones</h1>
         <h3 class="titleB eslogan" >Unete al undo del mejor sonido</h3>
-
         <a class="button" href="./preciosHeph.html">conoce más</a>
+      </div>
 
-      </section>
 
-    </div>
-    <section id="headphones" class="headphones center1000">
-      <h2 class="titleB secondTitle">Nuetros auriculares</h2>
-      <article class="boxContent">
-        <!-- headphones big -->
-        <img class="derecha" height="240" src="./image/bigClassic.png" alt="big-classic-and others"/>
-        <div class="containerQualities biggers">
-          <h3 class="titleC">Biggest</h3>
-          <ol class="ordenList ">
-            <li>Estilo DJ</li>
-            <li>originales</li>
-            <li>Alta fercuencia</li>
-            <li>Solo en el sonido</li>
-            <li>Una gran decisión</li>
-          </ol>
-        </div>
-      </article>
-      <article class="boxContent">
-        <!-- headphones big -->
-        <img class="izquierda" height="230" src="./image/classic.png" alt="simples"/>
-        <div class="containerQualities littles">
-          <h3 class="titleC">little Ones</h3>
-          <ol class="ordenList ">
-            <li>Estilo heph</li>
-            <li>Discretos</li>
-            <li>Alta sensibilidad</li>
-            <li>Ya todos los tienen</li>
-            <li>Escucha tu mejor playlist</li>
-          </ol>
-        </div>
-      </article>
+    </section>
+    <section id="headphones" class="headphones">
+      <div class=" center1000">
+        <h2 class="titleB secondTitle">Nuetros auriculares</h2>
+        <article class="boxContent">
+          <!-- headphones big -->
+          <img class="derecha" height="240" src="./image/bigClassic.png" alt="big-classic-and others"/>
+          <div class="containerQualities biggest">
+            <h3 class="titleC titleClass">Biggest</h3>
+            <ol class="ordenList ">
+              <li>Estilo DJ</li>
+              <li>originales</li>
+              <li>Alta fercuencia</li>
+              <li>Solo en el sonido</li>
+              <li>Una gran decisión</li>
+            </ol>
+          </div>
+        </article>
+        <article class="boxContent">
+          <!-- headphones big -->
+          <img class="izquierda" height="230" src="./image/classic.png" alt="simples"/>
+          <div class="containerQualities little">
+            <h3 class="titleC titleClass">little Ones</h3>
+            <ol class="ordenList ">
+              <li>Estilo heph</li>
+              <li>Discretos</li>
+              <li>Alta sensibilidad</li>
+              <li>Ya todos los tienen</li>
+              <li>Escucha tu mejor playlist</li>
+            </ol>
+          </div>
+        </article>
+
+      </div>
     </section>
     <footer class="footer">
       <div class="center1000">
@@ -81,10 +82,10 @@
           </div>
           <form class="form " action="index.html" method="post">
             <div class="col1">
-              <label class="" for="nombre">Nombre
+              <label class="contactoInput" for="nombre"><span>Nombre </span>
                 <input class="" type="text" name="nombre" id="nombre" required/>
               </label>
-              <label class="" for="email">E-mail
+              <label class="contactoInput" for="email"><span>E-mail </span>
                 <input class="" type="email" name="email" id="email"required/>
               </label>
               <div class="sexo ">

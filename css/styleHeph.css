@@ -1,14 +1,13 @@
 /*********************************/
-*{
-  font-family: 'Adamina', serif;
-}
 body{
-  /* width: 100vw; */
-
+  margin: 0;
+  font-family: 'Adamina', serif;
+  background: lightblue;
 }
 .center1000{
   width: 1000px;
   margin: auto;
+  position: relative;
 }
 .block{
   display: block;
@@ -19,8 +18,6 @@ body{
 
 .title{
   font-size: 70px;
-  /* margin: 70px 0 40px 0; */
-  padding-left: 20;
 }
 .titleB{
   font-size: 34px;
@@ -32,6 +29,7 @@ body{
 }
 .secondTitle{
   padding: 20px 0;
+  margin: 0;
 }
 input, textarea{
   outline: 0;
@@ -42,12 +40,13 @@ input:focus, textarea:focus{
 /*********************************/
 /*********************************/
 .principalContainer{
-  background-image:  url('../image/background3.jpg') ;
+  background: lightblue;
+  background-image:  url('../image/background5.jpg') ;
   background-size: cover;
 
 }
 .header{
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   position: relative;
 }
 .header a, .mainMenuOption li, .mainMenuOption {
@@ -56,13 +55,17 @@ input:focus, textarea:focus{
   text-decoration: none;
 }
 .containetIco{
-  margin: 30px 20px;
+  margin: 20px;
 }
 .mainMenuOption{
-  font-size: 20px;
+  font-size: 24px;
+  display: inline-block;
   position: absolute;
-  right: 5px;
-  top: 40px;
+  right: 0;
+  top: 30px;
+}
+.mainMenuOption ul{
+  margin: 0;
 }
 .mainMenuOption li{
   margin-left: 30px;
@@ -73,43 +76,50 @@ input:focus, textarea:focus{
 }
 .portada{
   color: white;
-  padding: 20px 30px 80px 30px;
-
+  height: 400px;
+  margin: 0;
+}
+.titleIndex{
+  margin: 40px 0 0 0;
 }
 .eslogan{
   /* text-align: right; */
+  margin: 10px 0;
   color: white;
 }
 .portada .button{
-
+  display: inline-block;
   padding: 4px;
   border-radius: 10px;
   font-size: 15px;
-  background: linear-gradient(to left, #9e2419, #bc6c09 );
+  background: linear-gradient(to left, #02e9d9, #d3bda3 );
   text-decoration: none;
-  color: white;
-  position: relative;
-  top: 30px;
+  margin: 10px;
 }
 /*********************************/
-.headphones *{
-  /* border: red dashed 2px; */
+.headphones{
+  background: lightgray;
+  margin: 0;
+  padding: 10px 0;
 }
 .boxContent{
   margin: 30px;
   display: block;
-  padding: 20px 10px 7px 10px;
+  padding: 10px;
   border: #0f0607 solid 2px;
   position: relative;
   border-radius: 10px 0 10px 0;
 }
+.titleClass{
+  margin: 0;
+}
 .containerQualities{
   display: inline-block;
 }
-.biggers{
+.biggest{
   margin-left:  150px;
 }
-.littles{
+.little{
   margin-left: 450px;
 }
 .ordenList{
@@ -117,13 +127,11 @@ input:focus, textarea:focus{
   padding: 10px;
 }
 .izquierda{
-  /* float: left; */
   position: absolute;
   left: 200px;
   bottom: 4px;
 }
 .derecha{
-  /* float: right; */
   position: absolute;
   right: 240px;
   bottom: 3px;
@@ -131,7 +139,7 @@ input:focus, textarea:focus{
 /*********************************/
 
 .footer{
-  background-color: #2f2420;
+  background-color: #363939;
   color: white;
 }
 .footer a{
@@ -162,11 +170,15 @@ input:focus, textarea:focus{
   display: flex;
   justify-content: space-around;
 }
-.col1 , .col2{
+.col1 , .col2, .contactoInput{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+.contactoInput input{
+  width: 75%;
+}
+
 .intereses{
   display: flex;
   flex-wrap: wrap;
@@ -189,7 +201,7 @@ table, table *{
 }
 th {
   text-align: left;
-  background-color: #a78541;
+  background-color: #363939;
   color: white;
   padding: 20px;
 }
@@ -198,10 +210,49 @@ td {
 }
 
 
-
-
-
-
-
-
 /*********************************/
+/*********************************/
+/*********************************/
+/*********************************/
+/*********************************/
+
+@media screen and (max-width: 1024px){
+/*** IPAD ***/
+/* portada */
+  .portada {
+    height: auto;
+  }
+  .containetIco{
+    margin: 20px 20px 0  20px;
+  }
+  .title {
+    font-size: 40px;
+    margin: 20px 0 0 0;
+  }
+  .eslogan {
+    font-size: 16px;
+    margin: 6px 2px;
+  }
+  .portada .button{
+    margin-bottom: 20px;
+  }
+  /*  headphones  */
+
+  .headphones {
+    text-align: center;
+  }
+  .izquierda, .derecha{
+    display: block;
+    position: static;
+    margin: auto;
+  }
+  .containerQualities{
+    margin: 0;
+  }
+  .containerQualities li{
+    list-style: none;
+  }
+
+  /*  headphones  */
+
+}
