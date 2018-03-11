@@ -1,3 +1,44 @@
+/**********************************/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?28s5jy');
+  src:  url('../fonts/icomoon.eot?28s5jy#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?28s5jy') format('truetype'),
+    url('../fonts/icomoon.woff?28s5jy') format('woff'),
+    url('../fonts/icomoon.svg?28s5jy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-mail:before {
+  content: "\e945";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-close:before {
+  content: "\ea0d";
+}
+
+
 /*********************************/
 body{
   width: 100%;
@@ -211,10 +252,28 @@ td {
 }
 
 /*********************************/
+.burguer-button{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #0EA094;
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 3;
+  display: none;
+}
+
+
+
 /*********************************/
 /*********************************/
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 960px){
 
   .center1000{
     width: 95%
@@ -304,6 +363,33 @@ td {
 @media screen and (max-width: 500px){
   .portada{
     text-align: center;
+  }
+  .burguer-button{
+    display: inline-block;
+  }
+  .portada .center1000{
+    position: static;
+  }
+  .mainMenuOption{
+    background: rgba(255, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    transition: 300ms;
+  }
+  .active{
+    left: 0;
+  }
+
+  .mainMenuOption ul{
+    flex: 1;
   }
   .mainMenuOption li{
     display: block;
