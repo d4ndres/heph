@@ -44,7 +44,7 @@ body{
   width: 100%;
   margin: 0;
   font-family: 'Adamina', serif;
-  background: lightblue;
+  background: white;
 }
 .center1000{
   width: 70%;
@@ -261,7 +261,7 @@ td {
   text-align: center;
   line-height: 35px;
 
-  position: absolute;
+  position: fixed;
   left: 15px;
   top: 15px;
   z-index: 3;
@@ -276,7 +276,7 @@ td {
 @media screen and (max-width: 960px){
 
   .center1000{
-    width: 95%
+    width: 85%;
   }
   .portada {
     height: auto;
@@ -314,6 +314,9 @@ td {
 }
 
 @media screen and (max-width: 650px){
+  .center1000{
+    width: 95%;
+  }
   .header{
     text-align: center;
   }
@@ -371,7 +374,7 @@ td {
     position: static;
   }
   .mainMenuOption{
-    background: rgba(255, 0, 0, 0.4);
+    background: rgba(14, 105, 158, 0.8);
     position: absolute;
     width: 100%;
     left: -100%;
@@ -383,6 +386,7 @@ td {
     display: flex;
     align-items: center;
     transition: 300ms;
+    position: fixed;
   }
   .active{
     left: 0;

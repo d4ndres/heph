@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="./css/styleHeph.css"/>
   </head>
   <body>
-    <section id="portada" class=" principalContainer">
+    <section id="portada" class="portada principalContainer">
       <header id="header" class="header center1000">
         <a class="containetIco" href="index.html"  >
           <img  src="./image/ultimateIcoHeph.png" alt="icon-heph" width="200">
         </a>
-        <nav class=" mainMenuOption ">
+        <span class="burguer-button icon-menu" id="burguer-button"></span>
+        <nav class=" mainMenuOption " id="mainMenuOption">
           <ul class="">
             <li>
               <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="./index.html#headphones">Headphones</a>
+              <a href="index.html#headphones">Headphones</a>
             </li>
           </ul>
         </nav>
@@ -55,7 +56,6 @@
 
     </section>
     </div>
-
     <footer class="footer">
       <div class="center1000">
         <div class="design">
@@ -112,5 +112,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+    <script src="./script/events.js"></script>
   </body>
 </html>
