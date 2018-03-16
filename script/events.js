@@ -25,8 +25,12 @@ function toggleMaineManu(){
 function removeMenu(){
   mainMenuOption.classList.remove('active')
 }
+function showMenu(){
+  mainMenuOption.classList.add('active')
+}
 
 var superBody = document.body
 
 var gestor = new Hammer(superBody);
 gestor.on('swipeleft', removeMenu);
+gestor.on('swiperight', showMenu);
