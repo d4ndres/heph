@@ -22,3 +22,11 @@ var bLAzy = new Blazy({
 function toggleMaineManu(){
   mainMenuOption.classList.toggle('active')
 }
+function removeMenu(){
+  mainMenuOption.classList.remove('active')
+}
+
+var superBody = document.body
+
+var gestor = new Hammer(superBody);
+gestor.on('swipeleft', removeMenu);
